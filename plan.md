@@ -52,3 +52,25 @@ Xây dựng hệ thống quản lý yêu cầu thực tập sinh (theo dõi và 
 + Phân tích yêu cầu phần mềm
 + Tìm hiểu công nghệ sử dụng
 + Chuẩn bị môi trường phát triển
+
+### Tuần 2
+- Xây dựng giao diện người dùng
+- Thiết kế dashboard
+
+### Tuần 3
+- Xây dựng backend Flask
+- Kết nối MySQL
+- Hoàn thiện chức năng CRUD
+
+### Tuần 4
+- Hoàn thiện chức năng xử lý yêu cầu
+- Tối ưu giao diện
+- Kiểm thử và sửa lỗi
+
+---
+
+## 6. Kết quả mong đợi
+- Hệ thống hoạt động ổn định
+- Giao diện thân thiện và hiện đại
+- Quản lý yêu cầu hiệu quả
+- Có thể mở rộng thêm tính năng trong tương lai
