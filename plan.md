@@ -56,16 +56,15 @@ Hiện nay nhiều doanh nghiệp và đơn vị thực tập vẫn quản lý c
 
 ---
 QUY TRÌNH THỰC HIỆN ĐỀ TÀI
-### PLAN
 -  Xây dựng kế hoạch thực hiện đề tài
 -  Xác định mục tiêu và phạm vi hệ thống
 - Xác định các chức năng chính của hệ thống
 - Phân chia thời gian thực hiện theo từng giai đoạn
-- Người thực hiện chính
+## Người thực hiện chính
  Sinh viên xác định định hướng đề tài
  Sinh viên lựa chọn chức năng phù hợp với thời gian thực hiện
  Sinh viên xây dựng kế hoạch phát triển hệ thống
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Gợi ý cấu trúc PLAN
  Gợi ý timeline thực hiện
  Gợi ý quy trình phát triển phần mềm
@@ -76,11 +75,11 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Phân tích các chức năng của hệ thống
 - Xây dựng Use Case cho hệ thống
 - Phân tích luồng xử lý dữ liệu
-- Người thực hiện chính
+## Người thực hiện chính
  Sinh viên phân tích nghiệp vụ thực tế
  Sinh viên xác định chức năng cần xây dựng
  Sinh viên xây dựng quy trình hoạt động hệ thống
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Gợi ý Use Case
  Gợi ý Activity Diagram và Sequence Diagram
  Hỗ trợ mô tả chức năng hệ thống
@@ -100,11 +99,11 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
  Thiết kế API xử lý dữ liệu bằng PHP
  Thiết kế chức năng thêm/sửa/xóa dữ liệu
  Kết nối dữ liệu giữa giao diện và database
-- Người thực hiện chính
+## Người thực hiện chính
  Sinh viên thiết kế cấu trúc database
  Sinh viên thiết kế giao diện hệ thống
  Sinh viên xác định luồng xử lý dữ liệu
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Gợi ý Database Schema
  Gợi ý bố cục UI/UX
  Hỗ trợ viết code mẫu
@@ -118,12 +117,12 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Kết nối PHP với MySQL
 - Hiển thị dữ liệu từ database
 - Xử lý phân quyền người dùng
-- Người thực hiện chính
+## Người thực hiện chính
  Sinh viên lập trình hệ thống
  Sinh viên xử lý logic chức năng
  Sinh viên kết nối frontend và backend
  Sinh viên kiểm soát source code
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Hỗ trợ viết code mẫu
  Hỗ trợ debug và sửa lỗi
  Gợi ý xử lý chức năng
@@ -134,11 +133,11 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Kiểm tra dữ liệu hệ thống
 - Kiểm tra giao diện người dùng
 - Sửa lỗi phát sinh
-- Người thực hiện chính
+## Người thực hiện chính
  Sinh viên kiểm thử chức năng thực tế
  Sinh viên đánh giá hoạt động hệ thống
  Sinh viên chỉnh sửa lỗi
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Gợi ý test case
  Hỗ trợ tìm lỗi hệ thống
  Gợi ý cải thiện hiệu năng và giao diện
@@ -148,11 +147,11 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Upload source code lên GitHub
 - Hoàn thiện báo cáo thực tập
 - Chuẩn bị slide và demo hệ thống
-- Người thực hiện chính
+## Người thực hiện chính
  Sinh viên hoàn thiện sản phẩm
  Sinh viên viết báo cáo
  Sinh viên chuẩn bị demo và thuyết trình
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Hỗ trợ trình bày báo cáo
  Gợi ý nội dung slide
  Hỗ trợ mô tả dự án và hệ thống
@@ -169,12 +168,12 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
 - Thiết kế Database sơ bộ
 - Thiết kế giao diện UI cơ bản
 - Vẽ Use Case Diagram và ERD
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Gợi ý Use Case
  Gợi ý Database Schema
  Gợi ý UI cơ bản
  Hỗ trợ trình bày tài liệu
-- Sinh viên thực hiện chính
+## Sinh viên thực hiện chính
  Phân tích nghiệp vụ hệ thống
  Xác định chức năng cần xây dựng
  Hoàn thiện nội dung phân tích
@@ -185,11 +184,11 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
 - Kết nối PHP với MySQL
 - Hoàn thiện giao diện Admin và Thực tập sinh
 - Hoàn thiện API xử lý dữ liệu
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Hỗ trợ viết code mẫu
  Hỗ trợ debug
  Gợi ý API và xử lý dữ liệu
-- Sinh viên thực hiện chính
+## Sinh viên thực hiện chính
  Lập trình chức năng hệ thống
  Kết nối frontend và backend
  Kiểm soát logic xử lý
@@ -200,11 +199,11 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
 - Upload source code lên GitHub
 - Hoàn thiện báo cáo thực tập
 - Chuẩn bị slide và demo hệ thống
-- AI hỗ trợ chính
+## AI hỗ trợ chính
  Gợi ý test case
  Hỗ trợ tìm lỗi
  Hỗ trợ trình bày báo cáo và slide
-- Sinh viên thực hiện chính
+## Sinh viên thực hiện chính
  Kiểm thử thực tế
  Tối ưu hệ thống
  Hoàn thiện báo cáo và demo hệ thống
