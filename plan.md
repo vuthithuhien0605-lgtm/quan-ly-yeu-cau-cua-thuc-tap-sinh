@@ -56,7 +56,7 @@ Hiện nay nhiều doanh nghiệp và đơn vị thực tập vẫn quản lý c
 
 ---
 QUY TRÌNH THỰC HIỆN ĐỀ TÀI
-#### PLAN
+### PLAN
 + Xây dựng kế hoạch thực hiện đề tài
 + Xác định mục tiêu và phạm vi hệ thống
 + Xác định các chức năng chính của hệ thống
@@ -70,7 +70,7 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 + Gợi ý timeline thực hiện
 + Gợi ý quy trình phát triển phần mềm
 + Hỗ trợ trình bày nội dung tài liệu
-##### Khảo sát và Phân tích yêu cầu
+### Khảo sát và Phân tích yêu cầu
 - Tìm hiểu quy trình quản lý yêu cầu thực tập sinh
 - Xác định nhu cầu sử dụng của Admin và Thực tập sinh
 - Phân tích các chức năng của hệ thống
@@ -85,7 +85,7 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 + Gợi ý Activity Diagram và Sequence Diagram
 + Hỗ trợ mô tả chức năng hệ thống
 + Hỗ trợ trình bày nội dung phân tích
-###### Thiết kế Database, UI và API
+### Thiết kế Database, UI và API
 - Thiết kế Database
 + Thiết kế bảng người dùng
 + Thiết kế bảng yêu cầu
@@ -110,7 +110,7 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 + Hỗ trợ viết code mẫu
 + Gợi ý cấu trúc API
 + Gợi ý tối ưu dữ liệu
-###### Lập trình
+### Lập trình
 - Xây dựng giao diện bằng HTML/CSS/JavaScript
 - Xây dựng chức năng đăng ký và đăng nhập
 - Xây dựng chức năng tạo yêu cầu
@@ -128,7 +128,7 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 + Hỗ trợ debug và sửa lỗi
 + Gợi ý xử lý chức năng
 + Gợi ý tối ưu giao diện và source code
-###### Kiểm thử
+### Kiểm thử
 - Kiểm tra chức năng đăng nhập
 - Kiểm tra chức năng tạo và xử lý yêu cầu
 - Kiểm tra dữ liệu hệ thống
@@ -142,7 +142,7 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 + Gợi ý test case
 + Hỗ trợ tìm lỗi hệ thống
 + Gợi ý cải thiện hiệu năng và giao diện
-###### Release
+### Release
 - Hoàn thiện hệ thống
 - Tối ưu source code
 - Upload source code lên GitHub
