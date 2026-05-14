@@ -85,20 +85,20 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Hỗ trợ mô tả chức năng hệ thống
 - Hỗ trợ trình bày nội dung phân tích
 ### Thiết kế Database, UI và API
-- Thiết kế Database
- Thiết kế bảng người dùng
- Thiết kế bảng yêu cầu
- Thiết kế bảng nhật ký trạng thái
- Thiết kế quan hệ dữ liệu
-- Thiết kế UI
- Thiết kế giao diện đăng nhập
- Thiết kế giao diện Admin
- Thiết kế giao diện Thực tập sinh
- Thiết kế giao diện quản lý yêu cầu
-- Thiết kế API
- Thiết kế API xử lý dữ liệu bằng PHP
- Thiết kế chức năng thêm/sửa/xóa dữ liệu
- Kết nối dữ liệu giữa giao diện và database
+# Thiết kế Database
+- Thiết kế bảng người dùng
+- Thiết kế bảng yêu cầu
+- Thiết kế bảng nhật ký trạng thái
+- Thiết kế quan hệ dữ liệu
+# Thiết kế UI
+- Thiết kế giao diện đăng nhập
+- Thiết kế giao diện Admin
+- Thiết kế giao diện Thực tập sinh
+- Thiết kế giao diện quản lý yêu cầu
+# Thiết kế API
+- Thiết kế API xử lý dữ liệu bằng PHP
+- Thiết kế chức năng thêm/sửa/xóa dữ liệu
+- Kết nối dữ liệu giữa giao diện và database
 ## Người thực hiện chính
 - Sinh viên thiết kế cấu trúc database
 - Sinh viên thiết kế giao diện hệ thống
