@@ -162,7 +162,7 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 
 ## Kế hoạch thực hiện
 KẾ HOẠCH THỰC HIỆN THEO TUẦN
-##Tuần 1: PLAN + Phân tích hệ thống
+## Tuần 1: PLAN + Phân tích hệ thống
 - Xây dựng kế hoạch thực hiện đề tài
 - Khảo sát và phân tích yêu cầu hệ thống
 - Xây dựng Use Case
@@ -178,7 +178,7 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
  Phân tích nghiệp vụ hệ thống
  Xác định chức năng cần xây dựng
  Hoàn thiện nội dung phân tích
-##Tuần 2: Thiết kế và Lập trình hệ thống
+## Tuần 2: Thiết kế và Lập trình hệ thống
 - Xây dựng chức năng đăng ký/đăng nhập
 - Xây dựng chức năng quản lý yêu cầu
 - Xây dựng chức năng cập nhật trạng thái xử lý
@@ -193,7 +193,7 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
  Lập trình chức năng hệ thống
  Kết nối frontend và backend
  Kiểm soát logic xử lý
-##Tuần 3: Kiểm thử và Hoàn thiện hệ thống
+## Tuần 3: Kiểm thử và Hoàn thiện hệ thống
 - Kiểm thử chức năng hệ thống
 - Sửa lỗi và tối ưu giao diện
 - Hoàn thiện source code
