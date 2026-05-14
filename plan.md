@@ -57,19 +57,19 @@ Hiện nay nhiều doanh nghiệp và đơn vị thực tập vẫn quản lý c
 ---
 QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 ### PLAN
-+ Xây dựng kế hoạch thực hiện đề tài
-+ Xác định mục tiêu và phạm vi hệ thống
-+ Xác định các chức năng chính của hệ thống
-+ Phân chia thời gian thực hiện theo từng giai đoạn
+-  Xây dựng kế hoạch thực hiện đề tài
+-  Xác định mục tiêu và phạm vi hệ thống
+- Xác định các chức năng chính của hệ thống
+- Phân chia thời gian thực hiện theo từng giai đoạn
 - Người thực hiện chính
-+ Sinh viên xác định định hướng đề tài
-+ Sinh viên lựa chọn chức năng phù hợp với thời gian thực hiện
-+ Sinh viên xây dựng kế hoạch phát triển hệ thống
+ Sinh viên xác định định hướng đề tài
+ Sinh viên lựa chọn chức năng phù hợp với thời gian thực hiện
+ Sinh viên xây dựng kế hoạch phát triển hệ thống
 - AI hỗ trợ chính
-+ Gợi ý cấu trúc PLAN
-+ Gợi ý timeline thực hiện
-+ Gợi ý quy trình phát triển phần mềm
-+ Hỗ trợ trình bày nội dung tài liệu
+ Gợi ý cấu trúc PLAN
+ Gợi ý timeline thực hiện
+ Gợi ý quy trình phát triển phần mềm
+ Hỗ trợ trình bày nội dung tài liệu
 ### Khảo sát và Phân tích yêu cầu
 - Tìm hiểu quy trình quản lý yêu cầu thực tập sinh
 - Xác định nhu cầu sử dụng của Admin và Thực tập sinh
@@ -77,39 +77,39 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Xây dựng Use Case cho hệ thống
 - Phân tích luồng xử lý dữ liệu
 - Người thực hiện chính
-+ Sinh viên phân tích nghiệp vụ thực tế
-+ Sinh viên xác định chức năng cần xây dựng
-+ Sinh viên xây dựng quy trình hoạt động hệ thống
+ Sinh viên phân tích nghiệp vụ thực tế
+ Sinh viên xác định chức năng cần xây dựng
+ Sinh viên xây dựng quy trình hoạt động hệ thống
 - AI hỗ trợ chính
-+ Gợi ý Use Case
-+ Gợi ý Activity Diagram và Sequence Diagram
-+ Hỗ trợ mô tả chức năng hệ thống
-+ Hỗ trợ trình bày nội dung phân tích
+ Gợi ý Use Case
+ Gợi ý Activity Diagram và Sequence Diagram
+ Hỗ trợ mô tả chức năng hệ thống
+ Hỗ trợ trình bày nội dung phân tích
 ### Thiết kế Database, UI và API
 - Thiết kế Database
-+ Thiết kế bảng người dùng
-+ Thiết kế bảng yêu cầu
-+ Thiết kế bảng nhật ký trạng thái
-+ Thiết kế quan hệ dữ liệu
+ Thiết kế bảng người dùng
+ Thiết kế bảng yêu cầu
+ Thiết kế bảng nhật ký trạng thái
+ Thiết kế quan hệ dữ liệu
 - Thiết kế UI
-+ Thiết kế giao diện đăng nhập
-+ Thiết kế giao diện Admin
-+ Thiết kế giao diện Thực tập sinh
-+ Thiết kế giao diện quản lý yêu cầu
+ Thiết kế giao diện đăng nhập
+ Thiết kế giao diện Admin
+ Thiết kế giao diện Thực tập sinh
+ Thiết kế giao diện quản lý yêu cầu
 - Thiết kế API
-+  Thiết kế API xử lý dữ liệu bằng PHP
-+ Thiết kế chức năng thêm/sửa/xóa dữ liệu
-+ Kết nối dữ liệu giữa giao diện và database
+ Thiết kế API xử lý dữ liệu bằng PHP
+ Thiết kế chức năng thêm/sửa/xóa dữ liệu
+ Kết nối dữ liệu giữa giao diện và database
 - Người thực hiện chính
-+ Sinh viên thiết kế cấu trúc database
-+ Sinh viên thiết kế giao diện hệ thống
-+ Sinh viên xác định luồng xử lý dữ liệu
+ Sinh viên thiết kế cấu trúc database
+ Sinh viên thiết kế giao diện hệ thống
+ Sinh viên xác định luồng xử lý dữ liệu
 - AI hỗ trợ chính
-+ Gợi ý Database Schema
-+ Gợi ý bố cục UI/UX
-+ Hỗ trợ viết code mẫu
-+ Gợi ý cấu trúc API
-+ Gợi ý tối ưu dữ liệu
+ Gợi ý Database Schema
+ Gợi ý bố cục UI/UX
+ Hỗ trợ viết code mẫu
+ Gợi ý cấu trúc API
+ Gợi ý tối ưu dữ liệu
 ### Lập trình
 - Xây dựng giao diện bằng HTML/CSS/JavaScript
 - Xây dựng chức năng đăng ký và đăng nhập
@@ -119,15 +119,15 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Hiển thị dữ liệu từ database
 - Xử lý phân quyền người dùng
 - Người thực hiện chính
-+ Sinh viên lập trình hệ thống
-+ Sinh viên xử lý logic chức năng
-+ Sinh viên kết nối frontend và backend
-+ Sinh viên kiểm soát source code
+ Sinh viên lập trình hệ thống
+ Sinh viên xử lý logic chức năng
+ Sinh viên kết nối frontend và backend
+ Sinh viên kiểm soát source code
 - AI hỗ trợ chính
-+ Hỗ trợ viết code mẫu
-+ Hỗ trợ debug và sửa lỗi
-+ Gợi ý xử lý chức năng
-+ Gợi ý tối ưu giao diện và source code
+ Hỗ trợ viết code mẫu
+ Hỗ trợ debug và sửa lỗi
+ Gợi ý xử lý chức năng
+ Gợi ý tối ưu giao diện và source code
 ### Kiểm thử
 - Kiểm tra chức năng đăng nhập
 - Kiểm tra chức năng tạo và xử lý yêu cầu
@@ -135,13 +135,13 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Kiểm tra giao diện người dùng
 - Sửa lỗi phát sinh
 - Người thực hiện chính
-+ Sinh viên kiểm thử chức năng thực tế
-+ Sinh viên đánh giá hoạt động hệ thống
-+ Sinh viên chỉnh sửa lỗi
+ Sinh viên kiểm thử chức năng thực tế
+ Sinh viên đánh giá hoạt động hệ thống
+ Sinh viên chỉnh sửa lỗi
 - AI hỗ trợ chính
-+ Gợi ý test case
-+ Hỗ trợ tìm lỗi hệ thống
-+ Gợi ý cải thiện hiệu năng và giao diện
+ Gợi ý test case
+ Hỗ trợ tìm lỗi hệ thống
+ Gợi ý cải thiện hiệu năng và giao diện
 ### Release
 - Hoàn thiện hệ thống
 - Tối ưu source code
@@ -149,14 +149,14 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Hoàn thiện báo cáo thực tập
 - Chuẩn bị slide và demo hệ thống
 - Người thực hiện chính
-+ Sinh viên hoàn thiện sản phẩm
-+ Sinh viên viết báo cáo
-+ Sinh viên chuẩn bị demo và thuyết trình
+ Sinh viên hoàn thiện sản phẩm
+ Sinh viên viết báo cáo
+ Sinh viên chuẩn bị demo và thuyết trình
 - AI hỗ trợ chính
-+ Hỗ trợ trình bày báo cáo
-+ Gợi ý nội dung slide
-+ Hỗ trợ mô tả dự án và hệ thống
-+ Hỗ trợ format tài liệu
+ Hỗ trợ trình bày báo cáo
+ Gợi ý nội dung slide
+ Hỗ trợ mô tả dự án và hệ thống
+ Hỗ trợ format tài liệu
   
 -----
 
@@ -170,14 +170,14 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
 - Thiết kế giao diện UI cơ bản
 - Vẽ Use Case Diagram và ERD
 - AI hỗ trợ chính
-+ Gợi ý Use Case
-+ Gợi ý Database Schema
-+ Gợi ý UI cơ bản
-+ Hỗ trợ trình bày tài liệu
+ Gợi ý Use Case
+ Gợi ý Database Schema
+ Gợi ý UI cơ bản
+ Hỗ trợ trình bày tài liệu
 - Sinh viên thực hiện chính
-+ Phân tích nghiệp vụ hệ thống
-+ Xác định chức năng cần xây dựng
-+ Hoàn thiện nội dung phân tích
+ Phân tích nghiệp vụ hệ thống
+ Xác định chức năng cần xây dựng
+ Hoàn thiện nội dung phân tích
 ##Tuần 2: Thiết kế và Lập trình hệ thống
 - Xây dựng chức năng đăng ký/đăng nhập
 - Xây dựng chức năng quản lý yêu cầu
@@ -186,13 +186,13 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
 - Hoàn thiện giao diện Admin và Thực tập sinh
 - Hoàn thiện API xử lý dữ liệu
 - AI hỗ trợ chính
-+ Hỗ trợ viết code mẫu
-+ Hỗ trợ debug
-+ Gợi ý API và xử lý dữ liệu
+ Hỗ trợ viết code mẫu
+ Hỗ trợ debug
+ Gợi ý API và xử lý dữ liệu
 - Sinh viên thực hiện chính
-+ Lập trình chức năng hệ thống
-+ Kết nối frontend và backend
-+ Kiểm soát logic xử lý
+ Lập trình chức năng hệ thống
+ Kết nối frontend và backend
+ Kiểm soát logic xử lý
 ##Tuần 3: Kiểm thử và Hoàn thiện hệ thống
 - Kiểm thử chức năng hệ thống
 - Sửa lỗi và tối ưu giao diện
@@ -201,12 +201,12 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
 - Hoàn thiện báo cáo thực tập
 - Chuẩn bị slide và demo hệ thống
 - AI hỗ trợ chính
-+ Gợi ý test case
-+ Hỗ trợ tìm lỗi
-+ Hỗ trợ trình bày báo cáo và slide
+ Gợi ý test case
+ Hỗ trợ tìm lỗi
+ Hỗ trợ trình bày báo cáo và slide
 - Sinh viên thực hiện chính
-+ Kiểm thử thực tế
-+ Tối ưu hệ thống
-+ Hoàn thiện báo cáo và demo hệ thống
+ Kiểm thử thực tế
+ Tối ưu hệ thống
+ Hoàn thiện báo cáo và demo hệ thống
 
 
