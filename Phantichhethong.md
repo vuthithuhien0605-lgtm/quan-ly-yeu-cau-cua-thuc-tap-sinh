@@ -40,6 +40,7 @@ Trong đó:
 ---
 
 ## Hình 4.1. Sơ đồ Use Case hệ thống
+<img width="795" height="557" alt="sodousecase" src="https://github.com/user-attachments/assets/41a1e7a1-ce7c-41e8-91c0-1543919a741e" />
 
 
 ```text
