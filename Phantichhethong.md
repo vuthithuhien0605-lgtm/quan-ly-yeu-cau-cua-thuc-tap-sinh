@@ -123,6 +123,7 @@ Trong đó:
 ---
 <img width="547" height="334" alt="UseCaseAdmincapnhattrangthai" src="https://github.com/user-attachments/assets/672f45c9-3912-4c6e-b987-fd31111fd0d8" />
 ---
+
 # 4.3. Sơ đồ Hoạt động (Activity Diagram)
 
 Activity Diagram mô tả luồng hoạt động chính của hệ thống từ lúc người dùng thực hiện thao tác cho đến khi hệ thống xử lý và trả kết quả.
