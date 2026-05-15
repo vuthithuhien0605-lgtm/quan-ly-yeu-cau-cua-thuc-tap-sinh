@@ -1,6 +1,6 @@
 # 4. PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG
 
-Trong chương này, hệ thống được phân tích dựa trên các chức năng nghiệp vụ chính của bài toán quản lý yêu cầu thực tập sinh.
+hệ thống được phân tích dựa trên các chức năng nghiệp vụ chính của bài toán quản lý yêu cầu thực tập sinh.
 
 Nội dung tập trung vào:
 - Phân tích Use Case
@@ -391,8 +391,8 @@ Trong đó:
 | trạng_thái_cũ        |
 | trạng_thái_mới       |
 | người_cập_nhật       |
-| ngày_tạo
-           |
+| ngày_tạo             |
+|                      |
 +----------------------+
 ```
 
