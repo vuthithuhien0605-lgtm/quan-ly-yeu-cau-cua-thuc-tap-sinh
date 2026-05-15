@@ -340,14 +340,14 @@ Các sơ đồ trình tự giúp mô tả:
 Hệ thống sử dụng MySQL để lưu trữ dữ liệu.
 
 Các bảng dữ liệu chính gồm:
-- users
-- internship_requests
-- status_logs
+- người_dùng
+- yêu_cầu_thực_tập
+- nhật_ký_trạng_thái
 
 Trong đó:
-- Bảng users lưu thông tin tài khoản người dùng
-- Bảng internship_requests lưu thông tin yêu cầu thực tập sinh
-- Bảng status_logs lưu lịch sử cập nhật trạng thái yêu cầu
+- Bảng người_dùng lưu thông tin tài khoản người dùng
+- Bảng yêu_cầu_thực_tập lưu thông tin yêu cầu thực tập sinh
+- Bảng nhật_ký_trạng_thái lưu lịch sử cập nhật trạng thái yêu cầu
 
 ---
 
