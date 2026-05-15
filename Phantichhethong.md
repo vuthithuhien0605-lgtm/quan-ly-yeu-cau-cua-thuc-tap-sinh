@@ -92,7 +92,9 @@ Trong đó:
 | Kết quả            | Người dùng truy cập vào hệ thống                                  |
 
 ---
+<img width="555" height="220" alt="UseCaseDangnhaphethong " src="https://github.com/user-attachments/assets/ce96b554-8b8c-4a6c-93a3-26af074cbd85" />
 
+---
 ## UC02 – Tạo yêu cầu
 
 | Thành phần         | Nội dung                                                         |
@@ -105,7 +107,9 @@ Trong đó:
 | Kết quả            | Yêu cầu được lưu vào hệ thống                                    |
 
 ---
+<img width="434" height="186" alt="UseCaseThuctapsinhtaoyeucau" src="https://github.com/user-attachments/assets/f9548d3d-fad6-41ac-acb8-962fedda2197" />
 
+---
 ## UC05 – Cập nhật trạng thái xử lý
 
 | Thành phần         | Nội dung                                                           |
@@ -116,7 +120,9 @@ Trong đó:
 | Điều kiện          | Admin đã đăng nhập                                                 |
 | Luồng xử lý chính  | Chọn yêu cầu → Cập nhật trạng thái → Hệ thống lưu lịch sử xử lý    |
 | Kết quả            | Trạng thái yêu cầu được cập nhật                                   |
-
+---
+<img width="547" height="334" alt="UseCaseAdmincapnhattrangthai" src="https://github.com/user-attachments/assets/672f45c9-3912-4c6e-b987-fd31111fd0d8" />
+---
 # 4.3. Sơ đồ Hoạt động (Activity Diagram)
 
 Activity Diagram mô tả luồng hoạt động chính của hệ thống từ lúc người dùng thực hiện thao tác cho đến khi hệ thống xử lý và trả kết quả.
@@ -139,6 +145,8 @@ Các luồng nghiệp vụ chính gồm:
 ---
 
 ## Hình 4.3.1. Activity Diagram – Quy trình thực tập tạo yêu cầu
+---
+<img width="269" height="508" alt="ActivityThuctapsinhtaoyeucau" src="https://github.com/user-attachments/assets/91d318d5-613d-466d-8784-93794e2e1652" />
 
 ```text
 +------------------------------+
@@ -171,6 +179,8 @@ Các luồng nghiệp vụ chính gồm:
 +------------------------------+
 ```
 ## Hình 4.3.2. Activity Diagram – Quy trình tạo yêu cầu
+---
+<img width="513" height="666" alt="Activitytaoyeucau" src="https://github.com/user-attachments/assets/37f72ff0-4235-4d03-a057-8fb3236ad992" />
 
 ```text
                           ●
@@ -220,6 +230,8 @@ Các luồng nghiệp vụ chính gồm:
 ---
 
 ## Hình 4.3.3. Activity Diagram – Quy trình Admin xử lý yêu cầu
+---
+<img width="275" height="464" alt="ActivityAdminxulyyeucau" src="https://github.com/user-attachments/assets/6f13ab1d-90ab-4f9a-ac67-e535c2005753" />
 
 ```text
                           ●
@@ -284,6 +296,8 @@ Các sơ đồ trình tự giúp mô tả:
 
 ---
 ## Hình 4.4.1. Sequence Diagram – Tạo yêu cầu
+---
+<img width="614" height="522" alt="SequenceUI" src="https://github.com/user-attachments/assets/aae7158d-8e6c-47c8-8559-559de7f2b31f" />
 
 ```text
 +----------------+   +----------------+   +----------------+   +----------------+
@@ -314,6 +328,8 @@ Các sơ đồ trình tự giúp mô tả:
 ```
 
 ## Hình 4.4.2. Sequence Diagram – Admin xử lý yêu cầu
+---
+<img width="648" height="533" alt="SequenceAdmin" src="https://github.com/user-attachments/assets/b2f67bca-4ced-471f-92f3-c2a245bf237d" />
 
 ```text
 +-------------+   +----------------+   +----------------+   +----------------+
@@ -353,6 +369,8 @@ Trong đó:
 ---
 
 ## Hình 4.5. ERD Database Diagram
+---
+<img width="472" height="413" alt="ERD Database Diagram" src="https://github.com/user-attachments/assets/80440370-0da2-4c7e-ae49-716601c6ee75" />
 
 ```text
 +----------------------+
