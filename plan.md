@@ -32,8 +32,9 @@ Hiện nay nhiều doanh nghiệp và đơn vị thực tập vẫn quản lý c
 - CSS
 - JavaScript
 - Bootstrap 5
-- Python Flask
+- PHP
 - MySQL
+- XAMPP/WAMP (môi trường phát triển)
 - GitHub
 - VS Code
 
@@ -84,21 +85,23 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Gợi ý Activity Diagram và Sequence Diagram
 - Hỗ trợ mô tả chức năng hệ thống
 - Hỗ trợ trình bày nội dung phân tích
-### Thiết kế Database, UI và API
+### Thiết kế Database, UI và Backend
 # Thiết kế Database
 - Thiết kế bảng người dùng
 - Thiết kế bảng yêu cầu
 - Thiết kế bảng nhật ký trạng thái
 - Thiết kế quan hệ dữ liệu
+- Viết SQL script tạo bảng
 # Thiết kế UI
 - Thiết kế giao diện đăng nhập
 - Thiết kế giao diện Admin
 - Thiết kế giao diện Thực tập sinh
 - Thiết kế giao diện quản lý yêu cầu
-# Thiết kế API
-- Thiết kế API xử lý dữ liệu bằng PHP
+# Thiết kế Backend PHP
+- Thiết kế cấu trúc thư mục dự án
+- Thiết kế file xử lý kết nối database
 - Thiết kế chức năng thêm/sửa/xóa dữ liệu
-- Kết nối dữ liệu giữa giao diện và database
+- Thiết kế xử lý form và session
 ## Người thực hiện chính
 - Sinh viên thiết kế cấu trúc database
 - Sinh viên thiết kế giao diện hệ thống
@@ -106,9 +109,9 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 ## AI hỗ trợ chính
 - Gợi ý Database Schema
 - Gợi ý bố cục UI/UX
-- Hỗ trợ viết code mẫu
-- Gợi ý cấu trúc API
-- Gợi ý tối ưu dữ liệu
+- Hỗ trợ viết code mẫu PHP
+- Gợi ý cấu trúc thư mục dự án
+- Gợi ý tối ưu dữ liệu và xử lý form
 ### Lập trình
 - Xây dựng giao diện bằng HTML/CSS/JavaScript
 - Xây dựng chức năng đăng ký và đăng nhập
@@ -185,9 +188,10 @@ KẾ HOẠCH THỰC HIỆN THEO TUẦN
 - Hoàn thiện giao diện Admin và Thực tập sinh
 - Hoàn thiện API xử lý dữ liệu
 ## AI hỗ trợ chính
-- Hỗ trợ viết code mẫu
+- Hỗ trợ viết code mẫu PHP
 - Hỗ trợ debug
-- Gợi ý API và xử lý dữ liệu
+- Gợi ý xử lý form và session
+- Gợi ý xử lý dữ liệu với MySQL
 ## Sinh viên thực hiện chính
 - Lập trình chức năng hệ thống
 - Kết nối frontend và backend
