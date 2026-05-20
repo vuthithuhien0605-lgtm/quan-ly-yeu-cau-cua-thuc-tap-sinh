@@ -165,7 +165,7 @@ Các luồng nghiệp vụ chính gồm:
 
 # 4.4. Sơ đồ Trình tự (Sequence Diagram)
 
-Sequence Diagram mô tả quá trình tương tác giữa người dùng, giao diện hệ thống, PHP Controller và cơ sở dữ liệu trong quá trình xử lý yêu cầu.
+Sequence Diagram mô tả quá trình tương tác giữa người dùng, giao diện hệ thống, PHP Backend và cơ sở dữ liệu trong quá trình xử lý yêu cầu.
 
 Trong hệ thống gồm 2 luồng xử lý chính:
 - Thực tập sinh tạo yêu cầu
@@ -178,12 +178,12 @@ Các sơ đồ trình tự giúp mô tả:
 - Quá trình phản hồi kết quả cho người dùng
 
 ### Bao gồm:
-- Người dùng gửi request
-- Giao diện gửi dữ liệu
-- PHP Controller xử lý
+- Người dùng gửi request (submit form)
+- Giao diện gửi dữ liệu đến PHP
+- PHP Backend xử lý và validate dữ liệu
 - Database lưu dữ liệu
 - Admin cập nhật trạng thái
-- Hệ thống trả kết quả
+- Hệ thống trả kết quả cho người dùng
 
 ---
 ## Hình 4.4.1. Sequence Diagram – Tạo yêu cầu
