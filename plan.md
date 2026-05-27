@@ -28,15 +28,16 @@ Hiện nay nhiều doanh nghiệp và đơn vị thực tập vẫn quản lý c
 ---
 
 ## Công nghệ sử dụng
-- HTML
-- CSS
-- JavaScript
-- Bootstrap 5
-- PHP
-- MySQL
-- XAMPP/WAMP (môi trường phát triển)
-- GitHub
-- VS Code
+- **Backend:** Python Flask 3.0.0
+- **Database:** MySQL (qua PyMySQL)
+- **ORM:** Flask-SQLAlchemy 3.1.1
+- **Frontend:** HTML5, CSS3, JavaScript
+- **UI Framework:** Bootstrap 5
+- **Icons:** Bootstrap Icons
+- **Security:** Werkzeug (Password Hashing)
+- **Environment:** Python 3.13.7, XAMPP (MySQL)
+- **Version Control:** Git/GitHub
+- **IDE:** VS Code
 
 ---
 
@@ -44,16 +45,20 @@ Hiện nay nhiều doanh nghiệp và đơn vị thực tập vẫn quản lý c
 
 ### Đối với thực tập sinh
 - Đăng nhập hệ thống
-- Tạo yêu cầu mới
+- Tạo yêu cầu mới (với loại và mức độ ưu tiên)
 - Theo dõi trạng thái yêu cầu
-- Xem thông báo phản hồi
+- Xem thông báo phản hồi từ Admin
+- Tìm kiếm yêu cầu của mình
+- Xem lịch sử thay đổi trạng thái
 
-### Đối với Admin 
+### Cho Admin 
 - Quản lý tài khoản người dùng
 - Xem và xử lý yêu cầu
 - Cập nhật trạng thái yêu cầu
 - Theo dõi tiến độ xử lý
-- Tìm kiếm và thống kê dữ liệu
+- Tìm kiếm và lọc yêu cầu (theo trạng thái, ưu tiên, loại)
+- Xem lịch sử thay đổi trạng thái
+- Xem thống kê dashboard
 
 ---
 QUY TRÌNH THỰC HIỆN ĐỀ TÀI
@@ -87,54 +92,68 @@ QUY TRÌNH THỰC HIỆN ĐỀ TÀI
 - Hỗ trợ trình bày nội dung phân tích
 ### Thiết kế Database, UI và Backend
 # Thiết kế Database
-- Thiết kế bảng người dùng
-- Thiết kế bảng yêu cầu
-- Thiết kế bảng nhật ký trạng thái
-- Thiết kế quan hệ dữ liệu
-- Viết SQL script tạo bảng
+- Thiết kế bảng người dùng (nguoi_dung)
+- Thiết kế bảng yêu cầu (yeu_cau_thuc_tap)
+- Thiết kế bảng nhật ký trạng thái (nhat_ky_trang_thai)
+- Thiết kế quan hệ dữ liệu (Foreign Keys, Relationships)
+- Viết SQL script tạo bảng với PyMySQL
 # Thiết kế UI
 - Thiết kế giao diện đăng nhập
-- Thiết kế giao diện Admin
-- Thiết kế giao diện Thực tập sinh
+- Thiết kế giao diện Admin Dashboard
+- Thiết kế giao diện Student Dashboard
 - Thiết kế giao diện quản lý yêu cầu
-# Thiết kế Backend PHP
-- Thiết kế cấu trúc thư mục dự án
-- Thiết kế file xử lý kết nối database
-- Thiết kế chức năng thêm/sửa/xóa dữ liệu
-- Thiết kế xử lý form và session
+- Thiết kế form tạo yêu cầu với validation
+- Thiết kế timeline lịch sử trạng thái
+# Thiết kế Backend Flask
+- Thiết kế cấu trúc thư mục dự án Flask
+- Thiết kế Models với SQLAlchemy ORM
+- Thiết kế Routes và Views
+- Thiết kế Authentication với Session
+- Thiết kế Decorators (@login_required, @admin_required)
+- Thiết kế Pagination và Search/Filter
 ## Người thực hiện chính
 - Sinh viên thiết kế cấu trúc database
 - Sinh viên thiết kế giao diện hệ thống
 - Sinh viên xác định luồng xử lý dữ liệu
 ## AI hỗ trợ chính
-- Gợi ý Database Schema
-- Gợi ý bố cục UI/UX
-- Hỗ trợ viết code mẫu PHP
-- Gợi ý cấu trúc thư mục dự án
-- Gợi ý tối ưu dữ liệu và xử lý form
+- Gợi ý Database Schema với SQLAlchemy
+- Gợi ý bố cục UI/UX với Bootstrap 5
+- Hỗ trợ viết code mẫu Flask/Python
+- Gợi ý cấu trúc thư mục dự án Flask
+- Gợi ý tối ưu queries và xử lý form
+- Hỗ trợ implement Pagination và Search
 ### Lập trình
-- Xây dựng giao diện bằng HTML/CSS/JavaScript
-- Xây dựng chức năng đăng ký và đăng nhập
-- Xây dựng chức năng tạo yêu cầu
+- Xây dựng giao diện bằng HTML/CSS/JavaScript/Bootstrap 5
+- Xây dựng Models với Flask-SQLAlchemy
+- Xây dựng chức năng đăng ký và đăng nhập (Session-based)
+- Xây dựng chức năng tạo yêu cầu với validation
 - Xây dựng chức năng quản lý và xử lý yêu cầu
-- Kết nối PHP với MySQL
-- Hiển thị dữ liệu từ database
-- Xử lý phân quyền người dùng
+- Xây dựng chức năng tìm kiếm và lọc nâng cao
+- Xây dựng chức năng phân trang (Pagination)
+- Xây dựng chức năng ghi lịch sử trạng thái
+- Kết nối Flask với MySQL qua PyMySQL
+- Hiển thị dữ liệu từ database với Jinja2 Templates
+- Xử lý phân quyền người dùng (Decorators)
 ## Người thực hiện chính
 - Sinh viên lập trình hệ thống
 - Sinh viên xử lý logic chức năng
 - Sinh viên kết nối frontend và backend
 - Sinh viên kiểm soát source code
 ## AI hỗ trợ chính
-- Hỗ trợ viết code mẫu
+- Hỗ trợ viết code Flask/Python
 - Hỗ trợ debug và sửa lỗi
 - Gợi ý xử lý chức năng
 - Gợi ý tối ưu giao diện và source code
+- Hỗ trợ implement tính năng mới
 ### Kiểm thử
 - Kiểm tra chức năng đăng nhập
 - Kiểm tra chức năng tạo và xử lý yêu cầu
+- Kiểm tra chức năng tìm kiếm và lọc
+- Kiểm tra chức năng phân trang
+- Kiểm tra lịch sử trạng thái
 - Kiểm tra dữ liệu hệ thống
-- Kiểm tra giao diện người dùng
+- Kiểm tra giao diện người dùng (responsive)
+- Kiểm tra phân quyền admin/student
 - Sửa lỗi phát sinh
 ## Người thực hiện chính
 - Sinh viên kiểm thử chức năng thực tế

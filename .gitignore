@@ -1,0 +1,33 @@
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+error_log
+access_log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Config files (nếu chứa thông tin nhạy cảm)
+# config/database.php
+
+# Upload files (nếu có)
+uploads/
+temp/
+
+# Cache
+cache/
+*.cache
