@@ -167,14 +167,16 @@ Các luồng nghiệp vụ chính gồm:
 
 ## Hình 4.3.1. Activity Diagram – Quy trình thực tập tạo yêu cầu
 ---
-<img width="269" height="508" alt="ActivityThuctapsinhtaoyeucau" src="https://github.com/user-attachments/assets/91d318d5-613d-466d-8784-93794e2e1652" />
+<img width="871" height="749" alt="image" src="https://github.com/user-attachments/assets/10667897-446b-4b37-ad16-3f4a0e85aec8" />
+
 
 
 
 
 ## Hình 4.3.3. Activity Diagram – Quy trình Admin xử lý yêu cầu
 ---
-<img width="275" height="464" alt="ActivityAdminxulyyeucau" src="https://github.com/user-attachments/assets/6f13ab1d-90ab-4f9a-ac67-e535c2005753" />
+<img width="904" height="783" alt="image" src="https://github.com/user-attachments/assets/79387666-c9be-4a27-9b8a-ac2845dcb6c0" />
+
 
 
 
