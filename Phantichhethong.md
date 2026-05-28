@@ -170,10 +170,6 @@ Các luồng nghiệp vụ chính gồm:
 <img width="269" height="508" alt="ActivityThuctapsinhtaoyeucau" src="https://github.com/user-attachments/assets/91d318d5-613d-466d-8784-93794e2e1652" />
 
 
-## Hình 4.3.2. Activity Diagram – Quy trình tạo yêu cầu
----
-<img width="513" height="666" alt="Activitytaoyeucau" src="https://github.com/user-attachments/assets/37f72ff0-4235-4d03-a057-8fb3236ad992" />
-
 
 
 ## Hình 4.3.3. Activity Diagram – Quy trình Admin xử lý yêu cầu
