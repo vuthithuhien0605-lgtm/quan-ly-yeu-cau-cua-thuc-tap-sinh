@@ -124,6 +124,28 @@ Trong đó:
 <img width="434" height="186" alt="UseCaseThuctapsinhtaoyeucau" src="https://github.com/user-attachments/assets/f9548d3d-fad6-41ac-acb8-962fedda2197" />
 
 ---
+## UC03 – Theo dõi tiến trình yêu cầu
+| Thành phần        | Nội dung                                          |
+| ----------------- | ------------------------------------------------- |
+| Tên Use Case      | Theo dõi tiến trình yêu cầu                       |
+| Actor             | Thực tập sinh                                     |
+| Mô tả             | Theo dõi trạng thái xử lý các yêu cầu đã gửi      |
+| Điều kiện         | Đã đăng nhập                                      |
+| Luồng xử lý chính | Chọn yêu cầu → Hệ thống hiển thị tiến trình xử lý |
+| Kết quả           | Người dùng xem được tiến độ xử lý                 |
+
+---
+## UC04 – Xem thông báo
+| Thành phần        | Nội dung                                     |
+| ----------------- | -------------------------------------------- |
+| Tên Use Case      | Xem thông báo                                |
+| Actor             | Thực tập sinh                                |
+| Mô tả             | Xem các thông báo từ hệ thống                |
+| Điều kiện         | Đã đăng nhập                                 |
+| Luồng xử lý chính | Mở màn hình thông báo → Hệ thống tải dữ liệu |
+| Kết quả           | Danh sách thông báo được hiển thị            |
+
+---
 ## UC05 – Cập nhật trạng thái xử lý
 
 | Thành phần         | Nội dung                                                           |
@@ -138,7 +160,61 @@ Trong đó:
 <img width="547" height="334" alt="UseCaseAdmincapnhattrangthai" src="https://github.com/user-attachments/assets/672f45c9-3912-4c6e-b987-fd31111fd0d8" />
 
 ---
+## UC06 – Quản lý hồ sơ cá nhân
+| Thành phần        | Nội dung                             |
+| ----------------- | ------------------------------------ |
+| Tên Use Case      | Quản lý hồ sơ cá nhân                |
+| Actor             | Thực tập sinh                        |
+| Mô tả             | Xem và cập nhật thông tin cá nhân    |
+| Điều kiện         | Đã đăng nhập                         |
+| Luồng xử lý chính | Mở hồ sơ → Chỉnh sửa → Lưu thông tin |
+| Kết quả           | Thông tin được cập nhật              |
 
+---
+## UC07 – Duyệt yêu cầu
+| Thành phần        | Nội dung                           |
+| ----------------- | ---------------------------------- |
+| Tên Use Case      | Quản lý thực tập sinh              |
+| Actor             | Admin                              |
+| Mô tả             | Quản lý danh sách thực tập sinh    |
+| Điều kiện         | Admin đăng nhập                    |
+| Luồng xử lý chính | Xem danh sách → Cập nhật thông tin |
+| Kết quả           | Dữ liệu được cập nhật              |
+
+---
+## UC08 – Quản lý thực tập sinh
+| Thành phần        | Nội dung                           |
+| ----------------- | ---------------------------------- |
+| Tên Use Case      | Quản lý thực tập sinh              |
+| Actor             | Admin                              |
+| Mô tả             | Quản lý danh sách thực tập sinh    |
+| Điều kiện         | Admin đăng nhập                    |
+| Luồng xử lý chính | Xem danh sách → Cập nhật thông tin |
+| Kết quả           | Dữ liệu được cập nhật              |
+
+---
+## UC09 – Quản lý tài khoản người dùng
+| Thành phần        | Nội dung                       |
+| ----------------- | ------------------------------ |
+| Tên Use Case      | Quản lý tài khoản              |
+| Actor             | Admin                          |
+| Mô tả             | Tạo, khóa, cấp quyền tài khoản |
+| Điều kiện         | Admin đăng nhập                |
+| Luồng xử lý chính | Tạo tài khoản → Phân quyền     |
+| Kết quả           | Tài khoản được cập nhật        |
+
+---
+## UC010 – Xem Dashboard thống kê
+| Thành phần        | Nội dung                                 |
+| ----------------- | ---------------------------------------- |
+| Tên Use Case      | Xem Dashboard                            |
+| Actor             | Admin                                    |
+| Mô tả             | Xem số liệu tổng quan hệ thống           |
+| Điều kiện         | Admin đăng nhập                          |
+| Luồng xử lý chính | Mở Dashboard → Hệ thống tổng hợp dữ liệu |
+| Kết quả           | Hiển thị thống kê                        |
+
+---
 # 4.3. Sơ đồ Hoạt động (Activity Diagram)
 
 Activity Diagram mô tả luồng hoạt động chính của hệ thống từ lúc người dùng thực hiện thao tác cho đến khi hệ thống xử lý và trả kết quả.
