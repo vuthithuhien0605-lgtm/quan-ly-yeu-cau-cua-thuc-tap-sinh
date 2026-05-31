@@ -297,16 +297,25 @@ Các sơ đồ trình tự giúp mô tả:
 - Database lưu log vào bảng nhat_ky_trang_thai
 - Admin cập nhật trạng thái
 - Hệ thống trả kết quả cho người dùng
+---
+
+Hình 4.4.x. Sequence Diagram – Đăng nhập hệ thống
+---
+<img width="651" height="520" alt="image" src="https://github.com/user-attachments/assets/3ce02113-97bf-468b-b9c3-ed9b9cc53de6" />
 
 ---
+
+
 ## Hình 4.4.1. Sequence Diagram – Tạo yêu cầu
 ---
-<img width="614" height="522" alt="SequenceUI" src="https://github.com/user-attachments/assets/aae7158d-8e6c-47c8-8559-559de7f2b31f" />
+<img width="698" height="521" alt="image" src="https://github.com/user-attachments/assets/2ff90091-5233-44ee-a1e7-4f348dc1ef5a" />
+
 
 
 ## Hình 4.4.2. Sequence Diagram – Admin xử lý yêu cầu
 ---
-<img width="648" height="533" alt="SequenceAdmin" src="https://github.com/user-attachments/assets/b2f67bca-4ced-471f-92f3-c2a245bf237d" />
+<img width="639" height="552" alt="image" src="https://github.com/user-attachments/assets/fb651073-c74b-4067-bc91-3ac302f412ae" />
+
 
 
 
