@@ -37,59 +37,27 @@ Hệ thống gồm 2 đối tượng sử dụng chính:
 Trong đó:
 - Thực tập sinh có thể tạo yêu cầu và theo dõi trạng thái xử lý
 - Admin có thể quản lý yêu cầu, cập nhật trạng thái và xem thống kê hệ thống
-
 ### Bao gồm:
-- Đăng nhập hệ thống
-- Tạo yêu cầu (với loại và mức độ ưu tiên)
-- Xem trạng thái yêu cầu
-- Tìm kiếm yêu cầu
-- Quản lý yêu cầu (Admin)
-- Cập nhật trạng thái xử lý (Admin)
-- Lọc yêu cầu theo trạng thái/ưu tiên/loại (Admin)
-- Xem lịch sử thay đổi trạng thái
-- Quản lý người dùng (Admin)
-- Xem báo cáo thống kê (Admin)
-- Phân trang danh sách yêu cầu
 
+#### Thực tập sinh
+- Đăng nhập hệ thống
+- Tạo yêu cầu
+- Xem trạng thái yêu cầu
+- Xem thông báo
+- Quản lý hồ sơ cá nhân
+- Sử dụng trợ lý AI
+
+#### Admin
+- Đăng nhập hệ thống
+- Quản lý yêu cầu
+- Cập nhật trạng thái xử lý
+- Quản lý người dùng
+- Xem báo cáo thống kê
+- Quản lý trợ lý AI
 ---
 
 ## Hình 4.1. Sơ đồ Use Case hệ thống
-<img width="795" height="557" alt="sodousecase" src="https://github.com/user-attachments/assets/41a1e7a1-ce7c-41e8-91c0-1543919a741e" />
-
-
-```text
-                 +--------------------------------------+
-                 | HỆ THỐNG QUẢN LÝ YÊU CẦU            |
-                 | THỰC TẬP SINH                       |
-                 +--------------------------------------+
-
-      +--------------------+             +--------------------+
-      |  Thực tập sinh     |             |       Admin        |
-      +--------------------+             +--------------------+
-                |                                     |
-                |                                     |
-      +--------------------+             +------------------------+
-      | Đăng nhập          |             | Đăng nhập              |
-      +--------------------+             +------------------------+
-                |                                     |
-      +--------------------+             +------------------------+
-      | Tạo yêu cầu        |             | Quản lý yêu cầu        |
-      +--------------------+             +------------------------+
-                |                                     |
-      +--------------------+             +------------------------+
-      | Xem trạng thái     |             | Cập nhật trạng thái    |
-      | yêu cầu            |             +------------------------+
-      +--------------------+                        |
-                                                    |
-                                         +------------------------+
-                                         | Quản lý người dùng     |
-                                         +------------------------+
-                                                    |
-                                         +------------------------+
-                                         | Xem báo cáo thống kê   |
-                                         +------------------------+
-```
-
+<img width="871" height="364" alt="image" src="https://github.com/user-attachments/assets/c1f3f1e4-55f1-441c-b527-fb86871b41e7" />
 ---
 
 # 4.2. Đặc tả Use Case
@@ -124,15 +92,16 @@ Trong đó:
 
 
 ---
-## UC03 – Theo dõi tiến trình yêu cầu
-| Thành phần        | Nội dung                                          |
-| ----------------- | ------------------------------------------------- |
-| Tên Use Case      | Theo dõi tiến trình yêu cầu                       |
-| Actor             | Thực tập sinh                                     |
-| Mô tả             | Theo dõi trạng thái xử lý các yêu cầu đã gửi      |
-| Điều kiện         | Đã đăng nhập                                      |
-| Luồng xử lý chính | Chọn yêu cầu → Hệ thống hiển thị tiến trình xử lý |
-| Kết quả           | Người dùng xem được tiến độ xử lý                 |
+### UC03 – Theo dõi tiến trình yêu cầu
+
+| Thành phần       | Nội dung                                            |
+| ---------------- | --------------------------------------------------- |
+| Tên Use Case     | Theo dõi tiến trình yêu cầu                         |
+| Actor            | Thực tập sinh                                       |
+| Mô tả            | Theo dõi trạng thái xử lý các yêu cầu đã gửi        |
+| Điều kiện        | Thực tập sinh đã đăng nhập hệ thống                 |
+| Luồng xử lý chính| Chọn yêu cầu → Xem tiến trình → Xem lịch sử xử lý   |
+| Kết quả          | Tiến trình xử lý được hiển thị                      |
 
 <img width="587" height="248" alt="image" src="https://github.com/user-attachments/assets/b0f5c298-0b34-44d3-b24b-06cc31007ee1" />
 
@@ -164,70 +133,103 @@ Trong đó:
 <img width="547" height="334" alt="UseCaseAdmincapnhattrangthai" src="https://github.com/user-attachments/assets/672f45c9-3912-4c6e-b987-fd31111fd0d8" />
 
 ---
-## UC06 – Quản lý hồ sơ cá nhân
-| Thành phần        | Nội dung                             |
-| ----------------- | ------------------------------------ |
-| Tên Use Case      | Quản lý hồ sơ cá nhân                |
-| Actor             | Thực tập sinh                        |
-| Mô tả             | Xem và cập nhật thông tin cá nhân    |
-| Điều kiện         | Đã đăng nhập                         |
-| Luồng xử lý chính | Mở hồ sơ → Chỉnh sửa → Lưu thông tin |
-| Kết quả           | Thông tin được cập nhật              |
+### UC06 – Quản lý hồ sơ cá nhân
+
+| Thành phần       | Nội dung                                            |
+| ---------------- | --------------------------------------------------- |
+| Tên Use Case     | Quản lý hồ sơ cá nhân                               |
+| Actor            | Thực tập sinh                                       |
+| Mô tả            | Xem và cập nhật thông tin cá nhân                   |
+| Điều kiện        | Thực tập sinh đã đăng nhập hệ thống                 |
+| Luồng xử lý chính| Mở hồ sơ → Chỉnh sửa thông tin → Lưu thay đổi       |
+| Kết quả          | Thông tin cá nhân được cập nhật                     |
 
 <img width="691" height="168" alt="image" src="https://github.com/user-attachments/assets/a7dc1ab2-60a0-4af4-9690-445569daf00d" />
 
 ---
-## UC07 – Duyệt yêu cầu
-| Thành phần        | Nội dung                           |
-| ----------------- | ---------------------------------- |
-| Tên Use Case      | Quản lý thực tập sinh              |
-| Actor             | Admin                              |
-| Mô tả             | Quản lý danh sách thực tập sinh    |
-| Điều kiện         | Admin đăng nhập                    |
-| Luồng xử lý chính | Xem danh sách → Cập nhật thông tin |
-| Kết quả           | Dữ liệu được cập nhật              |
+### UC07 – Duyệt yêu cầu
+
+| Thành phần       | Nội dung                                                   |
+| ---------------- | ---------------------------------------------------------- |
+| Tên Use Case     | Duyệt yêu cầu                                               |
+| Actor            | Admin                                                      |
+| Mô tả            | Tiếp nhận và xử lý các yêu cầu từ thực tập sinh            |
+| Điều kiện        | Admin đã đăng nhập hệ thống                                |
+| Luồng xử lý chính| Chọn yêu cầu → Xem chi tiết → Phê duyệt/Từ chối → Ghi chú  |
+| Kết quả          | Trạng thái yêu cầu được cập nhật                           |
 
 <img width="432" height="176" alt="image" src="https://github.com/user-attachments/assets/93483c55-82c1-463f-a802-aa03243a5d1e" />
 
 
 ---
-## UC08 – Quản lý thực tập sinh
-| Thành phần        | Nội dung                           |
-| ----------------- | ---------------------------------- |
-| Tên Use Case      | Quản lý thực tập sinh              |
-| Actor             | Admin                              |
-| Mô tả             | Quản lý danh sách thực tập sinh    |
-| Điều kiện         | Admin đăng nhập                    |
-| Luồng xử lý chính | Xem danh sách → Cập nhật thông tin |
-| Kết quả           | Dữ liệu được cập nhật              |
+### UC08 – Quản lý thực tập sinh
+
+| Thành phần       | Nội dung                                            |
+| ---------------- | --------------------------------------------------- |
+| Tên Use Case     | Quản lý thực tập sinh                               |
+| Actor            | Admin                                               |
+| Mô tả            | Quản lý thông tin và tiến trình thực tập sinh       |
+| Điều kiện        | Admin đã đăng nhập hệ thống                         |
+| Luồng xử lý chính| Xem danh sách → Cập nhật thông tin                  |
+| Kết quả          | Dữ liệu thực tập sinh được cập nhật                 |
 
 <img width="527" height="157" alt="image" src="https://github.com/user-attachments/assets/c525deba-c685-4497-a3b4-24335f28c207" />
 
 ---
-## UC09 – Quản lý tài khoản người dùng
-| Thành phần        | Nội dung                       |
-| ----------------- | ------------------------------ |
-| Tên Use Case      | Quản lý tài khoản              |
-| Actor             | Admin                          |
-| Mô tả             | Tạo, khóa, cấp quyền tài khoản |
-| Điều kiện         | Admin đăng nhập                |
-| Luồng xử lý chính | Tạo tài khoản → Phân quyền     |
-| Kết quả           | Tài khoản được cập nhật        |
+### UC09 – Quản lý tài khoản người dùng
+
+| Thành phần       | Nội dung                                            |
+| ---------------- | --------------------------------------------------- |
+| Tên Use Case     | Quản lý tài khoản người dùng                        |
+| Actor            | Admin                                               |
+| Mô tả            | Tạo mới, khóa và phân quyền tài khoản               |
+| Điều kiện        | Admin đã đăng nhập hệ thống                         |
+| Luồng xử lý chính| Tạo tài khoản → Phân quyền → Lưu dữ liệu            |
+| Kết quả          | Tài khoản được cập nhật                             |
 
 <img width="520" height="148" alt="image" src="https://github.com/user-attachments/assets/e73cc395-b362-4ab7-aa8b-0f6e22d5e4b8" />
 
 ---
-## UC010 – Xem Dashboard thống kê
-| Thành phần        | Nội dung                                 |
-| ----------------- | ---------------------------------------- |
-| Tên Use Case      | Xem Dashboard                            |
-| Actor             | Admin                                    |
-| Mô tả             | Xem số liệu tổng quan hệ thống           |
-| Điều kiện         | Admin đăng nhập                          |
-| Luồng xử lý chính | Mở Dashboard → Hệ thống tổng hợp dữ liệu |
-| Kết quả           | Hiển thị thống kê                        |
+### UC10 – Xem báo cáo thống kê
+
+| Thành phần       | Nội dung                                            |
+| ---------------- | --------------------------------------------------- |
+| Tên Use Case     | Xem báo cáo thống kê                                |
+| Actor            | Admin                                               |
+| Mô tả            | Theo dõi số liệu tổng quan của hệ thống             |
+| Điều kiện        | Admin đã đăng nhập hệ thống                         |
+| Luồng xử lý chính| Mở Dashboard → Hệ thống tổng hợp dữ liệu            |
+| Kết quả          | Báo cáo và biểu đồ thống kê được hiển thị           |
 
 <img width="501" height="152" alt="image" src="https://github.com/user-attachments/assets/7df7c7a3-1286-4e2a-863d-98d1bae57ebb" />
+
+---
+### UC11 – Quản lý trợ lý AI
+
+| Thành phần       | Nội dung                                            |
+| ---------------- | --------------------------------------------------- |
+| Tên Use Case     | Quản lý trợ lý AI                                   |
+| Actor            | Admin                                               |
+| Mô tả            | Cấu hình và theo dõi hoạt động của trợ lý AI        |
+| Điều kiện        | Admin đã đăng nhập hệ thống                         |
+| Luồng xử lý chính| Truy cập AI → Cập nhật cấu hình → Lưu thay đổi      |
+| Kết quả          | Cấu hình trợ lý AI được cập nhật                    |
+
+<img width="394" height="129" alt="image" src="https://github.com/user-attachments/assets/d5223a70-4ed0-4a1a-a757-8ca2e7be8eee" />
+
+---
+### UC12 – Sử dụng trợ lý AI
+
+| Thành phần       | Nội dung                                            |
+| ---------------- | --------------------------------------------------- |
+| Tên Use Case     | Sử dụng trợ lý AI                                   |
+| Actor            | Thực tập sinh                                       |
+| Mô tả            | Đặt câu hỏi và nhận hỗ trợ từ trợ lý AI             |
+| Điều kiện        | Thực tập sinh đã đăng nhập hệ thống                 |
+| Luồng xử lý chính| Nhập câu hỏi → AI xử lý → Trả kết quả               |
+| Kết quả          | Người dùng nhận được câu trả lời từ AI              |
+
+<img width="386" height="129" alt="image" src="https://github.com/user-attachments/assets/f2009d4c-c5d8-44be-8e91-48caa4a89d26" />
 
 ---
 # 4.3. Sơ đồ Hoạt động (Activity Diagram)
