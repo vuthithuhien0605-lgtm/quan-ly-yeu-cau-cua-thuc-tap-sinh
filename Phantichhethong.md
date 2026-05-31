@@ -120,8 +120,8 @@ Trong đó:
 | Luồng xử lý chính  | Nhập thông tin yêu cầu (tiêu đề, nội dung, loại, ưu tiên) → Gửi yêu cầu → Hệ thống lưu dữ liệu → Ghi log lịch sử trạng thái |
 | Kết quả            | Yêu cầu được lưu vào hệ thống với trạng thái "Mới"               |
 
----
-<img width="434" height="186" alt="UseCaseThuctapsinhtaoyeucau" src="https://github.com/user-attachments/assets/f9548d3d-fad6-41ac-acb8-962fedda2197" />
+---<img width="488" height="149" alt="image" src="https://github.com/user-attachments/assets/cc57c487-5103-42bd-a3b2-7d1b8133ef6e" />
+
 
 ---
 ## UC03 – Theo dõi tiến trình yêu cầu
@@ -134,6 +134,8 @@ Trong đó:
 | Luồng xử lý chính | Chọn yêu cầu → Hệ thống hiển thị tiến trình xử lý |
 | Kết quả           | Người dùng xem được tiến độ xử lý                 |
 
+<img width="587" height="248" alt="image" src="https://github.com/user-attachments/assets/b0f5c298-0b34-44d3-b24b-06cc31007ee1" />
+
 ---
 ## UC04 – Xem thông báo
 | Thành phần        | Nội dung                                     |
@@ -144,6 +146,8 @@ Trong đó:
 | Điều kiện         | Đã đăng nhập                                 |
 | Luồng xử lý chính | Mở màn hình thông báo → Hệ thống tải dữ liệu |
 | Kết quả           | Danh sách thông báo được hiển thị            |
+
+<img width="540" height="148" alt="image" src="https://github.com/user-attachments/assets/a4c98d9e-bbbd-4196-a703-c50b7487bd8c" />
 
 ---
 ## UC05 – Cập nhật trạng thái xử lý
@@ -170,6 +174,8 @@ Trong đó:
 | Luồng xử lý chính | Mở hồ sơ → Chỉnh sửa → Lưu thông tin |
 | Kết quả           | Thông tin được cập nhật              |
 
+<img width="691" height="168" alt="image" src="https://github.com/user-attachments/assets/a7dc1ab2-60a0-4af4-9690-445569daf00d" />
+
 ---
 ## UC07 – Duyệt yêu cầu
 | Thành phần        | Nội dung                           |
@@ -180,6 +186,8 @@ Trong đó:
 | Điều kiện         | Admin đăng nhập                    |
 | Luồng xử lý chính | Xem danh sách → Cập nhật thông tin |
 | Kết quả           | Dữ liệu được cập nhật              |
+
+<img width="614" height="295" alt="image" src="https://github.com/user-attachments/assets/1a448468-a42b-42d3-b6c2-83bcaf49a558" />
 
 ---
 ## UC08 – Quản lý thực tập sinh
@@ -192,6 +200,8 @@ Trong đó:
 | Luồng xử lý chính | Xem danh sách → Cập nhật thông tin |
 | Kết quả           | Dữ liệu được cập nhật              |
 
+<img width="527" height="157" alt="image" src="https://github.com/user-attachments/assets/c525deba-c685-4497-a3b4-24335f28c207" />
+
 ---
 ## UC09 – Quản lý tài khoản người dùng
 | Thành phần        | Nội dung                       |
@@ -203,6 +213,8 @@ Trong đó:
 | Luồng xử lý chính | Tạo tài khoản → Phân quyền     |
 | Kết quả           | Tài khoản được cập nhật        |
 
+<img width="520" height="148" alt="image" src="https://github.com/user-attachments/assets/e73cc395-b362-4ab7-aa8b-0f6e22d5e4b8" />
+
 ---
 ## UC010 – Xem Dashboard thống kê
 | Thành phần        | Nội dung                                 |
@@ -213,6 +225,8 @@ Trong đó:
 | Điều kiện         | Admin đăng nhập                          |
 | Luồng xử lý chính | Mở Dashboard → Hệ thống tổng hợp dữ liệu |
 | Kết quả           | Hiển thị thống kê                        |
+
+<img width="501" height="152" alt="image" src="https://github.com/user-attachments/assets/7df7c7a3-1286-4e2a-863d-98d1bae57ebb" />
 
 ---
 # 4.3. Sơ đồ Hoạt động (Activity Diagram)
