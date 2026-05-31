@@ -187,7 +187,8 @@ Trong đó:
 | Luồng xử lý chính | Xem danh sách → Cập nhật thông tin |
 | Kết quả           | Dữ liệu được cập nhật              |
 
-<img width="614" height="295" alt="image" src="https://github.com/user-attachments/assets/1a448468-a42b-42d3-b6c2-83bcaf49a558" />
+<img width="432" height="176" alt="image" src="https://github.com/user-attachments/assets/93483c55-82c1-463f-a802-aa03243a5d1e" />
+
 
 ---
 ## UC08 – Quản lý thực tập sinh
