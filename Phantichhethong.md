@@ -234,292 +234,282 @@ Trong đó:
 ---
 # 4.3. Sơ đồ Hoạt động (Activity Diagram)
 
-Activity Diagram mô tả luồng hoạt động chính của hệ thống từ lúc người dùng thực hiện thao tác cho đến khi hệ thống xử lý và trả kết quả.
+# 4.3. Sơ đồ Hoạt động (Activity Diagram)
 
-Các luồng nghiệp vụ chính gồm:
-- Quy trình đăng nhập
-- Quy trình tạo yêu cầu (với ghi log lịch sử)
-- Quy trình xử lý yêu cầu
-- Quy trình cập nhật trạng thái xử lý (với ghi log lịch sử)
-- Quy trình tìm kiếm và lọc yêu cầu
-- Quy trình phân trang
+Activity Diagram mô tả luồng hoạt động của hệ thống từ khi người dùng thực hiện thao tác cho đến khi hệ thống xử lý và trả kết quả.
 
-### Bao gồm:
-- Đăng nhập hệ thống
-- Nhập thông tin yêu cầu (tiêu đề, nội dung, loại, ưu tiên)
-- Gửi yêu cầu
-- Kiểm tra dữ liệu (validation)
-- Lưu dữ liệu vào Database (MySQL)
-- Ghi log vào bảng nhat_ky_trang_thai
-- Cập nhật trạng thái xử lý
-- Tìm kiếm và lọc yêu cầu
-- Phân trang kết quả
-- Hiển thị kết quả
+Các sơ đồ hoạt động được xây dựng dựa trên các chức năng nghiệp vụ chính của hệ thống quản lý yêu cầu thực tập sinh, giúp mô tả rõ trình tự xử lý dữ liệu, điều kiện rẽ nhánh và sự tương tác giữa người dùng với hệ thống.
+
+Các luồng nghiệp vụ chính bao gồm:
+
+* Quy trình đăng nhập hệ thống
+* Quy trình tạo yêu cầu thực tập
+* Quy trình theo dõi tiến trình xử lý yêu cầu
+* Quy trình xem thông báo
+* Quy trình xử lý yêu cầu của Admin
+* Quy trình xem Dashboard thống kê
+
+### Nội dung mô tả
+
+Các Activity Diagram thể hiện:
+
+* Người dùng thực hiện thao tác trên giao diện hệ thống
+* Hệ thống tiếp nhận và kiểm tra dữ liệu đầu vào
+* Xử lý nghiệp vụ theo từng chức năng
+* Lưu trữ và cập nhật dữ liệu trong cơ sở dữ liệu MySQL
+* Cập nhật trạng thái yêu cầu khi có thay đổi
+* Hiển thị kết quả xử lý cho người dùng
+* Hỗ trợ Admin quản lý và theo dõi toàn bộ quá trình xử lý yêu cầu
+
+Thông qua các sơ đồ hoạt động, có thể thấy được toàn bộ luồng xử lý nghiệp vụ của hệ thống từ phía Thực tập sinh đến Admin, đảm bảo việc quản lý yêu cầu được thực hiện một cách rõ ràng, nhất quán và dễ theo dõi.
+
 
 ---
 
-Activity 1 – Đăng nhập hệ thống
-●
-│
-▼
-Mở màn hình đăng nhập
-│
-▼
-Nhập Email và Mật khẩu
-│
-▼
-Nhấn Đăng nhập
-│
-▼
-Kiểm tra thông tin
-│
-▼
-◇ Thông tin hợp lệ?
-├── Không
-│   ▼
-│ Hiển thị thông báo lỗi
-│   │
-│   └──────────────┐
-│                  │
-└── Có             │
-    ▼              │
-Phân quyền tài khoản
-    │
-    ▼
-Chuyển đến Dashboard
-    │
-    ▼
-◉
-Activity 2 – Tạo yêu cầu
-●
-│
-▼
-Đăng nhập hệ thống
-│
-▼
-Chọn Tạo yêu cầu
-│
-▼
-Nhập tiêu đề yêu cầu
-│
-▼
-Nhập nội dung yêu cầu
-│
-▼
-Chọn loại yêu cầu
-│
-▼
-Nhấn Gửi yêu cầu
-│
-▼
-Kiểm tra dữ liệu
-│
-▼
-◇ Dữ liệu hợp lệ?
-├── Không
-│   ▼
-│ Hiển thị lỗi
-│   │
-│   └──────────────┐
-│                  │
-└── Có             │
-    ▼              │
-Lưu yêu cầu
-    │
-    ▼
-Cập nhật trạng thái "Mới"
-    │
-    ▼
-Thông báo thành công
-    │
-    ▼
-◉
-Activity 3 – Theo dõi tiến trình
-●
-│
-▼
-Đăng nhập hệ thống
-│
-▼
-Mở màn hình Tiến trình
-│
-▼
-Chọn yêu cầu cần xem
-│
-▼
-Tải dữ liệu tiến trình
-│
-▼
-Hiển thị trạng thái hiện tại
-│
-▼
-Hiển thị thời gian xử lý
-│
-▼
-Hiển thị ghi chú xử lý
-│
-▼
-◉
-Activity 4 – Xem thông báo
-●
-│
-▼
-Đăng nhập hệ thống
-│
-▼
-Mở màn hình Thông báo
-│
-▼
-Tải danh sách thông báo
-│
-▼
-Hiển thị thông báo mới
-│
-▼
-Người dùng xem chi tiết
-│
-▼
-Đánh dấu đã đọc
-│
-▼
-◉
-Activity 5 – Quản lý hồ sơ cá nhân
-●
-│
-▼
-Đăng nhập hệ thống
-│
-▼
-Mở hồ sơ cá nhân
-│
-▼
-Chỉnh sửa thông tin
-│
-▼
-Nhấn Lưu
-│
-▼
-Kiểm tra dữ liệu
-│
-▼
-◇ Hợp lệ?
-├── Không
-│   ▼
-│ Hiển thị lỗi
-│
-└── Có
-    ▼
-Cập nhật dữ liệu
-    │
-    ▼
-Thông báo thành công
-    │
-    ▼
-◉
-Activity 6 – Quản lý yêu cầu (Admin)
-●
-│
-▼
-Đăng nhập Admin
-│
-▼
-Mở màn hình Quản lý yêu cầu
-│
-▼
-Xem danh sách yêu cầu
-│
-▼
-Tìm kiếm yêu cầu
-│
-▼
-Lọc theo trạng thái
-│
-▼
-Chọn yêu cầu
-│
-▼
-Xem chi tiết
-│
-▼
-◉
-Activity 7 – Cập nhật trạng thái (Admin)
-●
-│
-▼
-Đăng nhập Admin
-│
-▼
-Chọn yêu cầu
-│
-▼
-Chọn trạng thái mới
-│
-▼
-Nhập ghi chú xử lý
-│
-▼
-Nhấn Cập nhật
-│
-▼
-Lưu thay đổi
-│
-▼
-Thông báo thành công
-│
-▼
-◉
-Activity 8 – Quản lý người dùng
-●
-│
-▼
-Đăng nhập Admin
-│
-▼
-Mở Quản lý người dùng
-│
-▼
-Xem danh sách tài khoản
-│
-▼
-Chọn tài khoản
-│
-▼
-Cập nhật thông tin
-│
-▼
-Lưu thay đổi
-│
-▼
-Thông báo thành công
-│
-▼
-◉
-Activity 9 – Dashboard thống kê
-●
-│
-▼
-Đăng nhập Admin
-│
-▼
-Mở Dashboard
-│
-▼
-Tổng hợp dữ liệu
-│
-▼
-Thống kê số yêu cầu
-│
-▼
-Thống kê trạng thái xử lý
-│
-▼
-Hiển thị biểu đồ
-│
-▼
-Hiển thị báo cáo
-│
-▼
-◉
+Hình 4.3.1. Activity Diagram – Đăng nhập hệ thống
+                    ┌─────────────┐
+                    │   Bắt đầu   │
+                    └──────┬──────┘
+                           │
+                           ▼
+              ┌────────────────────────┐
+              │ Mở màn hình đăng nhập  │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Nhập Email và Mật khẩu │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Nhấn nút Đăng nhập     │
+              └───────────┬────────────┘
+                          │
+                          ▼
+                     ◇ Hợp lệ ?
+                     /        \
+                  Không        Có
+                   /            \
+                  ▼              ▼
+      ┌──────────────────┐  ┌──────────────────┐
+      │ Thông báo lỗi    │  │ Xác định vai trò │
+      └────────┬─────────┘  └────────┬─────────┘
+               │                     │
+               └──────────┬──────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Chuyển tới Dashboard   │
+              └───────────┬────────────┘
+                          │
+                          ▼
+                    ┌─────────────┐
+                    │  Kết thúc   │
+                    └─────────────┘
+Hình 4.3.2. Activity Diagram – Tạo yêu cầu
+                    ┌─────────────┐
+                    │   Bắt đầu   │
+                    └──────┬──────┘
+                           │
+                           ▼
+              ┌────────────────────────┐
+              │ Mở màn hình yêu cầu    │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Nhập tiêu đề yêu cầu   │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Nhập nội dung yêu cầu  │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Chọn loại yêu cầu      │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Chọn mức độ ưu tiên    │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Nhấn nút Gửi yêu cầu   │
+              └───────────┬────────────┘
+                          │
+                          ▼
+                     ◇ Hợp lệ ?
+                     /        \
+                  Không        Có
+                   /            \
+                  ▼              ▼
+      ┌──────────────────┐  ┌──────────────────┐
+      │ Hiển thị lỗi     │  │ Lưu yêu cầu      │
+      └────────┬─────────┘  └────────┬─────────┘
+               │                     │
+               │                     ▼
+               │         ┌─────────────────────┐
+               │         │ Cập nhật trạng thái │
+               │         │ "Mới tạo"           │
+               │         └─────────┬───────────┘
+               │                   │
+               └─────────┬─────────┘
+                         │
+                         ▼
+             ┌─────────────────────────┐
+             │ Thông báo thành công    │
+             └───────────┬─────────────┘
+                         │
+                         ▼
+                   ┌─────────────┐
+                   │  Kết thúc   │
+                   └─────────────┘
+Hình 4.3.3. Activity Diagram – Theo dõi tiến trình yêu cầu
+                    ┌─────────────┐
+                    │   Bắt đầu   │
+                    └──────┬──────┘
+                           │
+                           ▼
+              ┌────────────────────────┐
+              │ Mở màn hình tiến trình │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Chọn yêu cầu cần xem   │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Tải dữ liệu tiến trình │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Hiển thị trạng thái    │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Hiển thị ghi chú xử lý │
+              └───────────┬────────────┘
+                          │
+                          ▼
+                    ┌─────────────┐
+                    │  Kết thúc   │
+                    └─────────────┘
+Hình 4.3.4. Activity Diagram – Xem thông báo
+                    ┌─────────────┐
+                    │   Bắt đầu   │
+                    └──────┬──────┘
+                           │
+                           ▼
+              ┌────────────────────────┐
+              │ Mở màn hình thông báo  │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Tải danh sách thông báo│
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Hiển thị danh sách     │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │ Xem chi tiết thông báo │
+              └───────────┬────────────┘
+                          │
+                          ▼
+                    ┌─────────────┐
+                    │  Kết thúc   │
+                    └─────────────┘
+Hình 4.3.5. Activity Diagram – Admin xử lý yêu cầu
+                    ┌─────────────┐
+                    │   Bắt đầu   │
+                    └──────┬──────┘
+                           │
+                           ▼
+             ┌──────────────────────────┐
+             │ Mở quản lý yêu cầu       │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+             ┌──────────────────────────┐
+             │ Chọn yêu cầu cần xử lý   │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+             ┌──────────────────────────┐
+             │ Xem chi tiết yêu cầu     │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+             ┌──────────────────────────┐
+             │ Chọn trạng thái mới      │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+             ┌──────────────────────────┐
+             │ Nhập ghi chú xử lý       │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+             ┌──────────────────────────┐
+             │ Nhấn nút Cập nhật        │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+             ┌──────────────────────────┐
+             │ Lưu thay đổi             │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+             ┌──────────────────────────┐
+             │ Thông báo thành công     │
+             └────────────┬─────────────┘
+                          │
+                          ▼
+                    ┌─────────────┐
+                    │  Kết thúc   │
+                    └─────────────┘
+Hình 4.3.6. Activity Diagram – Dashboard thống kê
+                    ┌─────────────┐
+                    │   Bắt đầu   │
+                    └──────┬──────┘
+                           │
+                           ▼
+               ┌───────────────────────┐
+               │ Mở Dashboard          │
+               └──────────┬────────────┘
+                          │
+                          ▼
+               ┌───────────────────────┐
+               │ Tổng hợp dữ liệu      │
+               └──────────┬────────────┘
+                          │
+                          ▼
+               ┌───────────────────────┐
+               │ Thống kê yêu cầu      │
+               └──────────┬────────────┘
+                          │
+                          ▼
+               ┌───────────────────────┐
+               │ Hiển thị biểu đồ      │
+               └──────────┬────────────┘
+                          │
+                          ▼
+                    ┌─────────────┐
+                    │  Kết thúc   │
+                    └─────────────┘
 
 
 # 4.4. Sơ đồ Trình tự (Sequence Diagram)
@@ -570,29 +560,125 @@ Hình 4.4.x. Sequence Diagram – Đăng nhập hệ thống
 
 # 4.5. Thiết kế cơ sở dữ liệu
 
-Hệ thống sử dụng MySQL để lưu trữ dữ liệu, kết nối qua PyMySQL và quản lý bằng Flask-SQLAlchemy ORM.
+Cơ sở dữ liệu được xây dựng nhằm lưu trữ tập trung toàn bộ thông tin của hệ thống quản lý yêu cầu thực tập sinh, bao gồm dữ liệu người dùng, yêu cầu thực tập và lịch sử xử lý yêu cầu.
 
-Các bảng dữ liệu chính gồm:
-- **nguoi_dung** - Quản lý tài khoản người dùng
-- **yeu_cau_thuc_tap** - Lưu thông tin yêu cầu
-- **nhat_ky_trang_thai** - Theo dõi lịch sử thay đổi trạng thái
+Hệ thống sử dụng **MySQL** làm hệ quản trị cơ sở dữ liệu, kết nối thông qua thư viện **PyMySQL** và được quản lý bằng **Flask-SQLAlchemy ORM**. Việc sử dụng ORM giúp đơn giản hóa quá trình thao tác dữ liệu, tăng khả năng bảo trì và mở rộng hệ thống.
 
-Trong đó:
-- Bảng **nguoi_dung** lưu thông tin tài khoản (email, mật khẩu hash, họ tên, vai trò, trạng thái)
-- Bảng **yeu_cau_thuc_tap** lưu thông tin yêu cầu (tiêu đề, nội dung, loại, ưu tiên, trạng thái, ghi chú admin)
-- Bảng **nhat_ky_trang_thai** lưu lịch sử cập nhật trạng thái (trạng thái cũ, trạng thái mới, người cập nhật, thời gian, ghi chú)
+### Các bảng dữ liệu chính
 
-**Quan hệ:**
-- `yeu_cau_thuc_tap.nguoi_dung_id` → `nguoi_dung.id` (Many-to-One)
-- `nhat_ky_trang_thai.yeu_cau_id` → `yeu_cau_thuc_tap.id` (Many-to-One)
-- `nhat_ky_trang_thai.nguoi_cap_nhat_id` → `nguoi_dung.id` (Many-to-One)
+#### Bảng nguoi_dung
 
----
+Bảng này dùng để lưu thông tin tài khoản đăng nhập của người dùng trong hệ thống.
+
+Thông tin lưu trữ bao gồm:
+
+* Mã người dùng (ID)
+* Họ và tên
+* Email đăng nhập
+* Mật khẩu đã mã hóa
+* Vai trò người dùng (Admin hoặc Thực tập sinh)
+* Trạng thái tài khoản
+* Thời gian tạo tài khoản
+
+#### Bảng yeu_cau_thuc_tap
+
+Bảng này dùng để lưu toàn bộ yêu cầu được tạo bởi thực tập sinh.
+
+Thông tin lưu trữ bao gồm:
+
+* Mã yêu cầu
+* Người tạo yêu cầu
+* Tiêu đề yêu cầu
+* Nội dung yêu cầu
+* Loại yêu cầu
+* Mức độ ưu tiên
+* Trạng thái hiện tại
+* Ghi chú xử lý của Admin
+* Thời gian tạo và cập nhật
+
+#### Bảng nhat_ky_trang_thai
+
+Bảng này dùng để ghi nhận lịch sử thay đổi trạng thái của từng yêu cầu trong suốt quá trình xử lý.
+
+Thông tin lưu trữ bao gồm:
+
+* Mã nhật ký
+* Mã yêu cầu
+* Trạng thái cũ
+* Trạng thái mới
+* Người cập nhật
+* Ghi chú xử lý
+* Thời gian cập nhật
+
+### Quan hệ giữa các bảng
+
+Hệ thống được thiết kế theo mô hình quan hệ với các liên kết chính như sau:
+
+* Một người dùng có thể tạo nhiều yêu cầu thực tập.
+* Mỗi yêu cầu chỉ thuộc về một người dùng.
+* Một yêu cầu có thể phát sinh nhiều bản ghi lịch sử trạng thái.
+* Mỗi bản ghi lịch sử trạng thái thuộc về một yêu cầu cụ thể.
+* Một người dùng (Admin) có thể thực hiện nhiều lần cập nhật trạng thái.
+
+Các khóa ngoại được sử dụng nhằm đảm bảo tính toàn vẹn dữ liệu và hỗ trợ truy xuất thông tin một cách hiệu quả.
+
+### Mô hình ERD
+
+Sơ đồ ERD (Entity Relationship Diagram) thể hiện cấu trúc dữ liệu và mối quan hệ giữa các bảng trong hệ thống.
+
+Thông qua sơ đồ ERD, có thể dễ dàng nhận thấy:
+
+* Quan hệ giữa người dùng và yêu cầu thực tập.
+* Quan hệ giữa yêu cầu thực tập và nhật ký trạng thái.
+* Luồng dữ liệu phục vụ việc theo dõi và xử lý yêu cầu trong toàn bộ hệ thống.
 
 ## Hình 4.5. ERD Database Diagram
----
-<img width="472" height="413" alt="ERD Database Diagram" src="https://github.com/user-attachments/assets/80440370-0da2-4c7e-ae49-716601c6ee75" />
-
++----------------------+
+|      NGUOI_DUNG      |
++----------------------+
+| PK id               |
+| ho_ten              |
+| email               |
+| mat_khau            |
+| vai_tro             |
+| trang_thai          |
+| created_at          |
++----------------------+
+           |
+           | 1
+           |
+           | N
+           ▼
++------------------------------+
+|     YEU_CAU_THUC_TAP         |
++------------------------------+
+| PK id                        |
+| FK nguoi_dung_id             |
+| tieu_de                      |
+| noi_dung                     |
+| loai_yeu_cau                 |
+| muc_do_uu_tien               |
+| trang_thai                   |
+| ghi_chu_admin                |
+| created_at                   |
+| updated_at                   |
++------------------------------+
+           |
+           | 1
+           |
+           | N
+           ▼
++------------------------------+
+|    NHAT_KY_TRANG_THAI        |
++------------------------------+
+| PK id                        |
+| FK yeu_cau_id                |
+| FK nguoi_cap_nhat_id         |
+| trang_thai_cu                |
+| trang_thai_moi               |
+| ghi_chu                      |
+| thoi_gian_cap_nhat           |
++------------------------------+
 
 
 # 4.6. Kết luận chương
