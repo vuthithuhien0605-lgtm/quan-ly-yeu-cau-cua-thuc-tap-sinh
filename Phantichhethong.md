@@ -264,8 +264,8 @@ Các Activity Diagram thể hiện:
 Thông qua các sơ đồ hoạt động, có thể thấy được toàn bộ luồng xử lý nghiệp vụ của hệ thống từ phía Thực tập sinh đến Admin, đảm bảo việc quản lý yêu cầu được thực hiện một cách rõ ràng, nhất quán và dễ theo dõi.
 
 
----
 
+```text
 Hình 4.3.1. Activity Diagram – Đăng nhập hệ thống
                     ┌─────────────┐
                     │   Bắt đầu   │
@@ -511,7 +511,7 @@ Hình 4.3.6. Activity Diagram – Dashboard thống kê
                     │  Kết thúc   │
                     └─────────────┘
 
-
+```
 # 4.4. Sơ đồ Trình tự (Sequence Diagram)
 
 Sequence Diagram mô tả quá trình tương tác giữa người dùng, giao diện hệ thống, Flask Backend và cơ sở dữ liệu trong quá trình xử lý yêu cầu.
@@ -633,6 +633,9 @@ Thông qua sơ đồ ERD, có thể dễ dàng nhận thấy:
 * Luồng dữ liệu phục vụ việc theo dõi và xử lý yêu cầu trong toàn bộ hệ thống.
 
 ## Hình 4.5. ERD Database Diagram
+
+
+```text
 +----------------------+
 |      NGUOI_DUNG      |
 +----------------------+
@@ -679,6 +682,7 @@ Thông qua sơ đồ ERD, có thể dễ dàng nhận thấy:
 | ghi_chu                      |
 | thoi_gian_cap_nhat           |
 +------------------------------+
+```
 
 
 # 4.6. Kết luận chương
