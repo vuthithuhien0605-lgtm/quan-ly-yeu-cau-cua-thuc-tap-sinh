@@ -258,19 +258,268 @@ Các luồng nghiệp vụ chính gồm:
 
 ---
 
-## Hình 4.3.1. Activity Diagram – Quy trình thực tập tạo yêu cầu
----
-<img width="871" height="749" alt="image" src="https://github.com/user-attachments/assets/10667897-446b-4b37-ad16-3f4a0e85aec8" />
-
-
-
-
-
-## Hình 4.3.3. Activity Diagram – Quy trình Admin xử lý yêu cầu
----
-<img width="904" height="783" alt="image" src="https://github.com/user-attachments/assets/79387666-c9be-4a27-9b8a-ac2845dcb6c0" />
-
-
+Activity 1 – Đăng nhập hệ thống
+●
+│
+▼
+Mở màn hình đăng nhập
+│
+▼
+Nhập Email và Mật khẩu
+│
+▼
+Nhấn Đăng nhập
+│
+▼
+Kiểm tra thông tin
+│
+▼
+◇ Thông tin hợp lệ?
+├── Không
+│   ▼
+│ Hiển thị thông báo lỗi
+│   │
+│   └──────────────┐
+│                  │
+└── Có             │
+    ▼              │
+Phân quyền tài khoản
+    │
+    ▼
+Chuyển đến Dashboard
+    │
+    ▼
+◉
+Activity 2 – Tạo yêu cầu
+●
+│
+▼
+Đăng nhập hệ thống
+│
+▼
+Chọn Tạo yêu cầu
+│
+▼
+Nhập tiêu đề yêu cầu
+│
+▼
+Nhập nội dung yêu cầu
+│
+▼
+Chọn loại yêu cầu
+│
+▼
+Nhấn Gửi yêu cầu
+│
+▼
+Kiểm tra dữ liệu
+│
+▼
+◇ Dữ liệu hợp lệ?
+├── Không
+│   ▼
+│ Hiển thị lỗi
+│   │
+│   └──────────────┐
+│                  │
+└── Có             │
+    ▼              │
+Lưu yêu cầu
+    │
+    ▼
+Cập nhật trạng thái "Mới"
+    │
+    ▼
+Thông báo thành công
+    │
+    ▼
+◉
+Activity 3 – Theo dõi tiến trình
+●
+│
+▼
+Đăng nhập hệ thống
+│
+▼
+Mở màn hình Tiến trình
+│
+▼
+Chọn yêu cầu cần xem
+│
+▼
+Tải dữ liệu tiến trình
+│
+▼
+Hiển thị trạng thái hiện tại
+│
+▼
+Hiển thị thời gian xử lý
+│
+▼
+Hiển thị ghi chú xử lý
+│
+▼
+◉
+Activity 4 – Xem thông báo
+●
+│
+▼
+Đăng nhập hệ thống
+│
+▼
+Mở màn hình Thông báo
+│
+▼
+Tải danh sách thông báo
+│
+▼
+Hiển thị thông báo mới
+│
+▼
+Người dùng xem chi tiết
+│
+▼
+Đánh dấu đã đọc
+│
+▼
+◉
+Activity 5 – Quản lý hồ sơ cá nhân
+●
+│
+▼
+Đăng nhập hệ thống
+│
+▼
+Mở hồ sơ cá nhân
+│
+▼
+Chỉnh sửa thông tin
+│
+▼
+Nhấn Lưu
+│
+▼
+Kiểm tra dữ liệu
+│
+▼
+◇ Hợp lệ?
+├── Không
+│   ▼
+│ Hiển thị lỗi
+│
+└── Có
+    ▼
+Cập nhật dữ liệu
+    │
+    ▼
+Thông báo thành công
+    │
+    ▼
+◉
+Activity 6 – Quản lý yêu cầu (Admin)
+●
+│
+▼
+Đăng nhập Admin
+│
+▼
+Mở màn hình Quản lý yêu cầu
+│
+▼
+Xem danh sách yêu cầu
+│
+▼
+Tìm kiếm yêu cầu
+│
+▼
+Lọc theo trạng thái
+│
+▼
+Chọn yêu cầu
+│
+▼
+Xem chi tiết
+│
+▼
+◉
+Activity 7 – Cập nhật trạng thái (Admin)
+●
+│
+▼
+Đăng nhập Admin
+│
+▼
+Chọn yêu cầu
+│
+▼
+Chọn trạng thái mới
+│
+▼
+Nhập ghi chú xử lý
+│
+▼
+Nhấn Cập nhật
+│
+▼
+Lưu thay đổi
+│
+▼
+Thông báo thành công
+│
+▼
+◉
+Activity 8 – Quản lý người dùng
+●
+│
+▼
+Đăng nhập Admin
+│
+▼
+Mở Quản lý người dùng
+│
+▼
+Xem danh sách tài khoản
+│
+▼
+Chọn tài khoản
+│
+▼
+Cập nhật thông tin
+│
+▼
+Lưu thay đổi
+│
+▼
+Thông báo thành công
+│
+▼
+◉
+Activity 9 – Dashboard thống kê
+●
+│
+▼
+Đăng nhập Admin
+│
+▼
+Mở Dashboard
+│
+▼
+Tổng hợp dữ liệu
+│
+▼
+Thống kê số yêu cầu
+│
+▼
+Thống kê trạng thái xử lý
+│
+▼
+Hiển thị biểu đồ
+│
+▼
+Hiển thị báo cáo
+│
+▼
+◉
 
 
 # 4.4. Sơ đồ Trình tự (Sequence Diagram)
